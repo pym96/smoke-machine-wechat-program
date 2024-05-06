@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/choices/index",
+    "pages/self/self",
+    "pages/logs/logs",
+    "pages/bluetoothPage/index",
+    "pages/template/index",
+    "pages/feedback/index",
+    "pages/setWIFI/index",
+    "pages/device/index",
+    "pages/login/login",
+    "pages/setting/setting"
+  ],
+  "tabBar": {
+    "color": " #3d567e",
+    "selectedColor": "#679bf5",
+    "list": [
+      {
+        "pagePath": "pages/choices/index",
+        "iconPath": "images/TabBar/normal_u17.png",
+        "selectedIconPath": "images/TabBar/normal_u502.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/self/self",
+        "iconPath": "images/TabBar/normal_u503.png",
+        "selectedIconPath": "images/TabBar/normal_u587.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "鸿雁系统",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "requireBackgroundModes": [
+    "bluetooth"
+  ]
+}

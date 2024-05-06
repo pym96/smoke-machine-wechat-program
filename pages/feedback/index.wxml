@@ -1,0 +1,10 @@
+<!--pages/feedback/index.wxml-->
+<view>
+	<view>请留下您宝贵的意见</view>
+	<view class="textarea_bg">
+		<textarea bindinput="textareaInput2" style="height: 4em;" maxlength="-1"></textarea>
+	</view>
+	<button class="button-86" bindtap="submit">提交</button>
+</view>
+
+

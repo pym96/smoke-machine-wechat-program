@@ -1,0 +1,35 @@
+/* pages/device/device.wxss */
+#add-button{
+	background-color: rgb(26, 173, 25);
+	color: rgb(255, 255, 255);
+}
+
+.warpper {
+	text-align: center;
+	margin: 20px;
+	font-size: large;
+}
+
+#kitchen-hood{
+	border-top: solid 2px black;
+}
+
+
+.state{
+	padding-left: 20px;
+	padding-bottom: 5px;
+	/* border-top: 1px black solid; */
+}
+
+.time {
+	padding-left: 20px;
+}
+
+.gas-stove
+{
+	border-top: solid 2px black;
+}
+
+button {
+	margin: 20px;
+}

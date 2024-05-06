@@ -1,0 +1,16 @@
+<view class="body">
+
+  <text class="welcome">欢迎登录！</text>
+
+  <view class="login">
+    <!-- <input class="input_number" type="number" placeholder="请输入手机号" />
+    <input class="input_auth_code" type="number" placeholder="请输入验证码"/> -->
+
+      <button id="login_button" bindtap="login">微信一键登录</button>
+      <button id="agree" bindtap="getUserProfile">同意用户授权</button>
+
+
+
+  </view>
+
+</view>

@@ -1,0 +1,27 @@
+.account {
+	border: 1px black solid;
+	height: 35px;
+	border-radius: 50px;
+	margin-bottom: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.psd {
+	border:  1px black solid;
+	border-radius: 50px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+input {
+	height: 35px;
+	padding-left: 10px;
+}
+
+view {
+	margin-top: 10px;
+	font-size: large;
+	text-align: center;
+}

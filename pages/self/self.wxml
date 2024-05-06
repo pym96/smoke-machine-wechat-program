@@ -1,0 +1,69 @@
+<view class="body">
+
+  <view class="rectangle">
+    <image class="ellipse" id="head_portrait" src="{{headIcon}}" mode="aspectFit"></image>
+
+
+    <!-- 未登录 -->
+    <view wx:if="{{!isLogin}}">
+      <view class="login_text" bindtap="redirect_login"> 登录/注册 </view>
+      <view class="login_message">登录后享受更多服务</view>
+
+
+    </view>
+    <!-- 已登录 -->
+    <view wx:else>
+      <view class="login_text">{{username}} </view>
+      <view id="login_out">安全退出</view>
+    </view>
+
+
+  </view>
+
+
+  <view class="choice_list">
+    <view class="redirecr_list" id="redirect_choice" bindtap="redirect_choice">
+      <image class="icon" src="/images/normal_u11.png"></image>
+      <text>设备选择</text>
+      <image class="arrow" src="/images/normal_u32.svg"></image>
+    </view>
+
+    <!-- 分割线 -->
+    <image class="cutoff_rule" src="/images/normal_u30.svg"></image>
+
+    <view class="redirecr_list" id="redirect_shopping" bindtap="redirect_shopping">
+      <image class="icon" src="/images/normal_u10.png"></image>
+      <text>商城</text>
+      <image class="arrow" src="/images/normal_u32.svg"></image>
+    </view>
+
+    <!-- 分割线 -->
+    <image class="cutoff_rule" src="/images/normal_u30.svg"></image>
+
+    <view class="redirecr_list" id="redirecr_feedback" bindtap="redirecr_feedback">
+      <image class="icon" src="/images/normal_u9.png"></image>
+      <text>意见反馈</text>
+      <image class="arrow" src="/images/normal_u32.svg"></image>
+    </view>
+
+    <!-- 分割线 -->
+    <image class="cutoff_rule" src="/images/normal_u30.svg"></image>
+
+    <view class="redirecr_list" id="redirecr_about" bindtap="redirecr_about">
+      <image class="icon" src="/images/normal_u8.png"></image>
+      <text>关于我们</text>
+      <image class="arrow" src="/images/normal_u32.svg"></image>
+    </view>
+
+
+    <!-- 分割线 -->
+    <image class="cutoff_rule" src="/images/normal_u30.svg"></image>
+
+    <view class="redirecr_list" id="redirecr_setting" bindtap="redirecr_setting">
+      <image class="icon" src="/images/normal_u7.png"></image>
+      <text>设置</text>
+      <image class="arrow" src="/images/normal_u32.svg"></image>
+    </view>
+
+  </view>
+</view>

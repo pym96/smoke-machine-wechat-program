@@ -1,0 +1,20 @@
+<!--pages/index/index.wxml-->
+<view id="body">
+
+<view class="top-bar">
+  <text>已绑定设备</text>
+  
+  <button id="add-button" bindtap="add_device">添加新设备+</button>
+</view>
+
+  <view id="device-label-list">
+    <view
+     wx:for="{{deviceList}}" wx:key="*this"
+     class="device-label" >
+      <image src="/images/normal_u156.svg" mode="aspectFill"></image>
+      <text>{{item}}</text>
+      <button bindtap="to_device_detail" id="{{item}}">开始检测</button>
+    </view>
+  </view>
+  <!-- <button id="add-button" bindtap="add_device">添加设备</button> -->
+</view>

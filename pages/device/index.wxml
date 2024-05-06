@@ -1,0 +1,62 @@
+<!--pages/device/device.wxml-->
+
+<view>
+  <!-- <view class="warpper">
+    <text>deviceId = {{deviceId}}</text>
+  </view> -->
+  <view wx:if="{{isSetWIFIPassword}}" class="warpper">
+    该设备已设置WIFI密码
+    <button id="add-button" bindtap="setWIFIPassword">修改WIFI密码</button>
+  </view>
+  <view class="warpper" wx:else>
+    <text>该设备未设置密码或设置的账号密码错误</text>
+    <button id="add-button" bindtap="setWIFIPassword">设置WIFI密码</button>
+  </view>
+  
+  <!-- 烟机
+    1. 设置延迟关机时间
+    2. 远程开关机
+  -->
+  <view  id="kitchen-hood">
+    <view style="padding-top: 10px; font-size:larger; text-align: center; font-weight: 700;">
+      油烟机
+    </view>
+    <view class="state">
+      设备状态: {{kitchen_hood_data.device_state}}
+    </view>
+    <view class='time'>
+      剩余关机时间: {{kitchen_hood_data.time_remaining}}分钟
+    </view >
+<picker mode="time" start="00:00" end="06:00" header-text="请设置设备要运行的小时和分钟"
+bindchange="kitchen_hood_set_close_time">
+      <button class='set_close_time' >设置关机时间</button>
+</picker>
+    <button class='switch_state' bindtap="kitchen_hood_swtich_state" >开关机</button>
+  </view>
+  
+  <!-- 燃气灶
+    1. 根据后端数据进行报警
+    2. 设置关机时间
+  -->
+  <view class='gas-stove'>
+    <view style="padding-top: 10px; font-size:larger; text-align: center; font-weight: 700;">
+      燃气灶
+    </view>
+    <view class="state" >
+      设备状态: {{gas_stove.device_state}}
+    </view>
+    <view class='time'>
+      剩余关机时间: {{gas_stove.time_remaining}}分钟
+    </view>
+<picker mode="time" start="00:00" end="06:00" header-text="请设置设备要运行的小时和分钟" bindchange="gas_stove_set_close_time">
+      <button class='set_close_time'>设置关机时间</button>
+		</picker>
+    
+    
+    <button class='switch_state' bindtap="gas_stove_switch_state">开关机</button>
+
+  </view>
+  
+  
+  
+</view>

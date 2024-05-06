@@ -1,0 +1,3 @@
+<!--pages/setting/setting.wxml-->
+
+<button id="root-add-device" bindtap="root_add_device">管理员添加设备</button>

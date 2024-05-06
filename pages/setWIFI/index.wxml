@@ -1,0 +1,16 @@
+<!--pages/setWIFI/setWIFI.wxml-->
+<view wx:if="{{bluetoothState}}" class="warpper">
+	<view class="account">
+		<input type="text" placeholder="WIFI账号" bindinput="get_account"/>
+	</view>
+	<view class="psd">
+		<input type="password" placeholder="密码" bindinput="get_psd"/>
+	</view>
+	<view class="btn_commit" bindtap="sendData">
+		<button>提交</button>
+	</view>
+</view>
+<view wx:else>
+	<text>连接蓝牙中...</text>
+</view>
+
